@@ -1,0 +1,89 @@
+body {
+  text-align: center;
+  background: -webkit-linear-gradient(90deg, #034a4f,#6b9a9a,#034a4f);
+  background: linear-gradient(90deg, #034a4f,#6b9a9a,#034a4f);  
+}
+
+.title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic; /* Hace que el texto sea cursivo */
+}
+
+.search-container {
+    margin: 20px;
+    text-align: center;
+}
+  
+#searchInput {
+    padding: 8px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc; /* Agregar un borde sutil */
+    outline: none; /* Eliminar el borde de enfoque predeterminado */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+#searchButton {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #ccc; /* Borde para el botón */
+    background-color: transparent; /* Fondo transparente */
+    color: black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color */
+}
+
+#searchButton:hover {
+    background-color: #13777e 
+}
+
+#prevBook,
+#nextBook {
+display: none; /* Oculta las flechas por defecto */
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  max-width: 600px;
+}
+.carousel img {
+    width: 250px; 
+    height: auto; 
+}
+
+.book {
+  text-align: center;
+}
+
+img {
+  border-radius: 5px;
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.9);
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.controls button {
+    background-color: transparent; /* Sin fondo */
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: black; /* Color de las flechas */
+}
+  
+.controls button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo sutil cuando se pasa el cursor */
+}
